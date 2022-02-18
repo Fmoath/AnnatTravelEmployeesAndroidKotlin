@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity
  * @Website : fm-ps.online
  * @Whatsapp : 00972597718418
  */
-class DeviceUtil {
+object DeviceUtil {
     //==============================================================================================
     // Key Board ...
     private var inputMethodManager: InputMethodManager? = null
