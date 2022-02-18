@@ -1,3 +1,41 @@
 <resources>
-    <string name="app_name">AnnatTravelEmployees</string>
+
+    //==============================================================================================
+    // Application ...
+    <string name="application_name">شركة أناة للحج والعمرة ذ.م.م</string>
+    <string name="application_description">نظام المعتمرين</string>
+    <string name="application_type">تطبيق الموظفين</string>
+    <string name="application_rights">كل حقوق التطبيق محفوظة شركة أناة للحج والعمرة ذ.م.م</string>
+    <string name="application_theme">مظهر التطبيق</string>
+    <string name="application_language">لغة التطبيق</string>
+
+    //==============================================================================================
+    // Developer ...
+    <string name="dev_name">معاذ رائد أبو عودة</string>
+    <string name="dev_email">fm.moath99@gmail.com</string>
+    <string name="dev_mobile">00972597718418</string>
+
+    //==============================================================================================
+    // General ...
+
+    <string name="user_name">إسم المستخدم</string>
+    <string name="user_image">صورة المستخدم</string>
+    <string name="e_mail">البريد الإلكتروني</string>
+    <string name="mobile">رقم الهاتف</string>
+    <string name="password">كلمة المرور</string>
+
+    <string name="home">الرئيسية</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="location">الموقع</string>
+    <string name="notification">الإشعارات</string>
+    <string name="setting">الإعدادات</string>
+
+    <string name="get_started">بدء الإستخدام</string>
+    <string name="welcome">أهلاً بك</string>
+
+    <string name="skip">تخطي</string>
+
+    <string name="edit">تعديل</string>
+
 </resources>
