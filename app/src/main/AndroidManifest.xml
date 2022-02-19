@@ -9,6 +9,17 @@
         android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AnnatTravelEmployees">
+
+        <activity
+            android:name=".views.activities.SignInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="fm.ps.annat.travel.employees" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="SignInActivity" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".views.activities.OnBoardingActivity"
             android:exported="true">

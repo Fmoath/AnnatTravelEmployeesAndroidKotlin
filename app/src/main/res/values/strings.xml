@@ -20,6 +20,7 @@
 
     <string name="user_name">إسم المستخدم</string>
     <string name="user_image">صورة المستخدم</string>
+    <string name="passport_number">رقم جواز السفر</string>
     <string name="e_mail">البريد الإلكتروني</string>
     <string name="mobile">رقم الهاتف</string>
     <string name="password">كلمة المرور</string>
@@ -50,6 +51,13 @@
     <string name="on_boarding_description_three">هنا يظهر تفاصيل بسيطة لا تتجاوز سطر واحد فقط للتعريف عن العنوان الثالث</string>
     <string name="on_boarding_description_four">هنا يظهر تفاصيل بسيطة لا تتجاوز سطر واحد فقط للتعريف عن العنوان الرابع</string>
     <string name="on_boarding_description_five">هنا يظهر تفاصيل بسيطة لا تتجاوز سطر واحد فقط للتعريف عن العنوان الخامس</string>
+
+    //==============================================================================================
+    // Sign ...
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="forget_password">أرسل لي كلمة المرور</string>
+    <string name="sign_in_description">قم بكتابة بريدك الإلكتروني وكلمة المرور الخاصة بك لتتمكن من الدخول على التطبيق ومتابعة مهامك وما يقع على عاتقك</string>
+    <string name="account_recovery_description">في حال واجهتك مشكلة في الدخول للتطبيق قم بالتواصل مع الموظف التقني وفي حال نسيت كلمة المرور سنرسلها لك برسالة نصية</string>
 
     //==============================================================================================
     // More ...

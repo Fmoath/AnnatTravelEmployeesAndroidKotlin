@@ -57,7 +57,7 @@ class OnBoardingActivity : BaseActivity() , View.OnClickListener {
     override fun onClick(view: View) {
         when (view){
             binding.onBoardingSkip -> binding.onBoardingContainer.currentItem = binding.onBoardingContainer.currentItem + 1
-            binding.onBoardingGetStarted -> startNewActivity(Activities.SIGN_UP_ACTIVITY , null , false)
+            binding.onBoardingGetStarted -> startNewActivity(Activities.SIGN_IN_ACTIVITY , null , false)
         }
     }
 
