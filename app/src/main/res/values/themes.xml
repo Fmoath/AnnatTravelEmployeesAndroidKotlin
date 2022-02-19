@@ -160,13 +160,13 @@
 
     //==============================================================================================
     // Button ...
-    <!--    <style name="Button_amber">-->
-    <!--        <item name="android:background">@drawable/selector_shape_rectangle_amber_to_white</item>-->
-    <!--        <item name="android:textColor">@color/selector_color_white_to_amber</item>-->
-    <!--        <item name="android:textSize">@dimen/_9ssp</item>-->
-    <!--        <item name="android:fontFamily">@font/tajawal_medium</item>-->
-    <!--        <item name="android:textAllCaps">true</item>-->
-    <!--    </style>-->
+        <style name="Button_amber">
+            <item name="android:background">@drawable/selector_shape_rectangle_amber_to_white</item>
+            <item name="android:textColor">@color/selector_color_white_to_amber</item>
+            <item name="android:textSize">@dimen/_9ssp</item>
+            <item name="android:fontFamily">@font/tajawal_medium</item>
+            <item name="android:textAllCaps">true</item>
+        </style>
 
     <!--    <style name="Button_grey">-->
     <!--        <item name="android:background">@drawable/selector_shape_rectangle_grey_to_white</item>-->

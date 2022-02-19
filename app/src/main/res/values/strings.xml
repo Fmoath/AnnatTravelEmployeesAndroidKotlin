@@ -38,4 +38,23 @@
 
     <string name="edit">تعديل</string>
 
+    //==============================================================================================
+    // On Boarding ...
+    <string name="on_boarding_title_one">العنوان الاول</string>
+    <string name="on_boarding_title_two">العنوان الثاني</string>
+    <string name="on_boarding_title_three">العنوان الثالث</string>
+    <string name="on_boarding_title_four">العنوان الرابع</string>
+    <string name="on_boarding_title_five">العنوان الخامس</string>
+    <string name="on_boarding_description_one">هنا يظهر تفاصيل بسيطة لا تتجاوز سطر واحد فقط للتعريف عن العنوان الأول</string>
+    <string name="on_boarding_description_two">هنا يظهر تفاصيل بسيطة لا تتجاوز سطر واحد فقط للتعريف عن العنوان الثاني</string>
+    <string name="on_boarding_description_three">هنا يظهر تفاصيل بسيطة لا تتجاوز سطر واحد فقط للتعريف عن العنوان الثالث</string>
+    <string name="on_boarding_description_four">هنا يظهر تفاصيل بسيطة لا تتجاوز سطر واحد فقط للتعريف عن العنوان الرابع</string>
+    <string name="on_boarding_description_five">هنا يظهر تفاصيل بسيطة لا تتجاوز سطر واحد فقط للتعريف عن العنوان الخامس</string>
+
+    //==============================================================================================
+    // More ...
+    <string name="image">صورة</string>
+    <string name="basic_data">البيانات الأساسية</string>
+    <string name="secondary_data">البيانات الثانوية</string>
+
 </resources>

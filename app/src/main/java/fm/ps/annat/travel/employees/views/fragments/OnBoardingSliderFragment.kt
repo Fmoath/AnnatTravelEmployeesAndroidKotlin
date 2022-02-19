@@ -51,13 +51,15 @@ class OnBoardingSliderFragment : BaseFragment() {
     //==============================================================================================
     // Initialize Fragment ...
     private fun initializeFragment() {
+        image = getResourcesDrawable(requireArguments().getInt("image"))
+        title = getResourcesString(requireArguments().getInt("title"))
+        description = getResourcesString(requireArguments().getInt("description"))
+
         initializeView()
     }
 
     private fun initializeView() {
-        image = getResourcesDrawable(requireArguments().getInt("image"))
-        title = getResourcesString(requireArguments().getInt("title"))
-        description = getResourcesString(requireArguments().getInt("description"))
+        setIntroData()
     }
 
     //==============================================================================================

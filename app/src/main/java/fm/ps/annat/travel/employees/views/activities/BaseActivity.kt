@@ -2,9 +2,14 @@ package fm.ps.annat.travel.employees.views.activities
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.drawable.Drawable
+import android.view.View
+import android.view.animation.Animation
 import androidx.appcompat.app.AppCompatActivity
 import fm.ps.annat.travel.employees.util.ActivityUtil
+import fm.ps.annat.travel.employees.util.AnimationUtil
 import fm.ps.annat.travel.employees.util.DeviceUtil
+import fm.ps.annat.travel.employees.util.ResourceUtil
 
 /**
  * Created With Love For : Annat Travel
@@ -62,6 +67,31 @@ open class BaseActivity : AppCompatActivity() {
     /** Navigation Bar **/
     fun hideNavigationBar() {
         DeviceUtil.hideNavigationBar(this)
+    }
+
+
+    //==============================================================================================
+    // Resources ...
+    fun getResourcesString(id: Int) : String{
+        return ResourceUtil.getResourcesString( this , id)
+    }
+    fun getResourcesColor(id: Int) : Int{
+        return ResourceUtil.getResourcesColor( this , id)
+    }
+    fun getResourcesDrawable(id: Int) : Drawable {
+        return ResourceUtil.getResourcesDrawable( this , id)
+    }
+
+    //==============================================================================================
+    // Animation ...
+    fun useAnimationWithView(view: View, anim: Int){
+        AnimationUtil.useAnimationWithView( view , getAnimationFromAnim(anim))
+    }
+    fun useAnimationWithView(view: View, anim: Int, whatDoYouWanAfterTheAnimationVisibleOrInvisibleOrGoneView :Int){
+        AnimationUtil.useAnimationWithView( view , getAnimationFromAnim(anim) , whatDoYouWanAfterTheAnimationVisibleOrInvisibleOrGoneView)
+    }
+    private fun getAnimationFromAnim(anim :Int) : Animation {
+        return AnimationUtil.getAnimationFromAnim(this , anim)
     }
 
 }
