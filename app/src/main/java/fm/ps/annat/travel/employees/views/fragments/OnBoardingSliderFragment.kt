@@ -1,5 +1,6 @@
 package fm.ps.annat.travel.employees.views.fragments
 
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -27,6 +28,9 @@ class OnBoardingSliderFragment : BaseFragment() {
 
     //==============================================================================================
     // Variable ...
+    private lateinit var image : Drawable
+    private lateinit var title : String
+    private lateinit var description : String
 
     //==============================================================================================
     // On Create Fragment  ...
@@ -48,16 +52,19 @@ class OnBoardingSliderFragment : BaseFragment() {
     // Initialize Fragment ...
     private fun initializeFragment() {
         initializeView()
-        listener()
     }
 
     private fun initializeView() {
-
+        image = getResourcesDrawable(requireArguments().getInt("image"))
+        title = getResourcesString(requireArguments().getInt("title"))
+        description = getResourcesString(requireArguments().getInt("description"))
     }
 
     //==============================================================================================
-    // Listener ...
-    private fun listener() {
-
+    // Intro Data ...
+    private fun setIntroData() {
+        binding.onBoardingImage.setImageDrawable(image)
+        binding.onBoardingTitle.text = title
+        binding.onBoardingDescription.text = description
     }
 }
