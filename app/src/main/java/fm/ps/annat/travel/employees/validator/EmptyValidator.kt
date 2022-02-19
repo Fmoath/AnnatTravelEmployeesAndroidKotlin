@@ -3,6 +3,7 @@ package fm.ps.annat.travel.employees.validator
 import android.widget.EditText
 import fm.ps.annat.travel.employees.abstract.ValidatorAbstract
 import fm.ps.annat.travel.employees.keys.Messages
+import fm.ps.annat.travel.employees.util.EditTextUtil
 
 /**
  * Created With Love For : Annat Travel
