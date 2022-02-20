@@ -1,6 +1,7 @@
 package fm.ps.annat.travel.employees.util
 
 import android.text.TextUtils
+import android.view.View
 import android.widget.EditText
 
 /**
@@ -16,6 +17,20 @@ import android.widget.EditText
  */
 object ViewsUtil {
 
+
+    //==============================================================================================
+    // Enabled And Disabled View  ...
+    fun disabledViews(vararg view: View){
+        for (thisView in view) {
+            thisView.isEnabled = false
+        }
+    }
+
+    fun enabledViews(vararg view: View){
+        for (thisView in view) {
+            thisView.isEnabled = true
+        }
+    }
 
     //==============================================================================================
     // Edit Text ...
