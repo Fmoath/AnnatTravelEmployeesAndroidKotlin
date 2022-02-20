@@ -3,7 +3,7 @@ package fm.ps.annat.travel.employees.validator
 import android.widget.EditText
 import fm.ps.annat.travel.employees.abstract.ValidatorAbstract
 import fm.ps.annat.travel.employees.keys.Messages
-import fm.ps.annat.travel.employees.util.EditTextUtil
+import fm.ps.annat.travel.employees.util.ViewsUtil
 
 /**
  * Created With Love For : Annat Travel
@@ -20,7 +20,7 @@ class EmptyValidator(private var editText: EditText) : ValidatorAbstract(editTex
 
     override val isValid: Boolean
         get() {
-            if (EditTextUtil.isEmpty(editText)) {
+            if (ViewsUtil.isTheEditTextEmpty(editText)) {
                 editText.error = getErrorMessage(editText)
                 return false
             }

@@ -14,9 +14,12 @@ import android.widget.EditText
  * @Website : fm-ps.online
  * @Whatsapp : 00972597718418
  */
-object EditTextUtil {
+object ViewsUtil {
 
-    fun isEmpty(editText: EditText?): Boolean {
+
+    //==============================================================================================
+    // Edit Text ...
+    fun isTheEditTextEmpty(editText: EditText?): Boolean {
         if (editText == null) {
             return true
         }
@@ -24,7 +27,7 @@ object EditTextUtil {
         return TextUtils.isEmpty(str)
     }
 
-    fun getText(editText: EditText?): String {
+    fun getTextFromEditText(editText: EditText?): String {
         return if (editText == null) "" else editText.getText().toString().trim { it <= ' ' }
     }
 
