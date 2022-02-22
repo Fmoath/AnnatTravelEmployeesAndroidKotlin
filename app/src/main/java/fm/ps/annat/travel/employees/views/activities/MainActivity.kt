@@ -1,6 +1,5 @@
 package fm.ps.annat.travel.employees.views.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
@@ -9,6 +8,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationBarView
 import fm.ps.annat.travel.employees.R
 import fm.ps.annat.travel.employees.databinding.ActivityMainBinding
+import fm.ps.annat.travel.employees.util.BottomNavigationUtil.deselectAllItems
 
 class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.OnItemSelectedListener {
 
@@ -42,11 +42,15 @@ class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.O
     //==============================================================================================
     // Listener Views In Activity ...
     private fun listener(){
+        binding.fragmentHomeProfile.setOnClickListener( this )
+        binding.mainBottomBarOption.setOnItemSelectedListener( this )
     }
 
     override fun onClick(view: View?) {
         if (view == binding.fragmentHomeProfile){
-
+            binding.fragmentHomeProfile.isSelected = true
+            binding.mainBottomBarOption.deselectAllItems()
+            //replaceFragment( ProfileFragment() , "profile_fragment")
         }
     }
 
@@ -76,4 +80,10 @@ class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.O
         }
     }
 
+    //==============================================================================================
+    // More ...
+    private fun replaceFragment(fragment: Fragment, tag: String) {
+        binding.fragmentHomeProfile.isSelected = false
+        replaceFragment(fragment, tag , R.id.main_container , true)
+    }
 }
