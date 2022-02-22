@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable
 import androidx.fragment.app.Fragment
 import fm.ps.annat.travel.employees.util.ActivityUtil
 import fm.ps.annat.travel.employees.util.DeviceUtil
+import fm.ps.annat.travel.employees.util.FragmentUtil
 import fm.ps.annat.travel.employees.util.ResourceUtil
 
 /**
@@ -33,6 +34,12 @@ open class BaseFragment() : Fragment() {
     }
     fun startNavigationActivity(title: String, description: String, hint: String, textButton: String, newActivity: String) {
         ActivityUtil.startNavigationActivity(requireActivity() , title , description , hint, textButton , newActivity)
+    }
+
+    //==============================================================================================
+    // Fragments ...
+    fun replaceFragment(fragment: Fragment, tag: String, container: Int, addToBackStack: Boolean) {
+        FragmentUtil.replaceFragment(fragment, requireActivity().supportFragmentManager , tag, container, addToBackStack)
     }
 
     //==============================================================================================

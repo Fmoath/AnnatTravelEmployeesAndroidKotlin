@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable
 import android.view.View
 import android.view.animation.Animation
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import fm.ps.annat.travel.employees.util.*
 
 /**
@@ -35,6 +36,12 @@ open class BaseActivity : AppCompatActivity() {
     }
     fun startNavigationActivity(title: String, description: String, hint: String, textButton: String, newActivity: String) {
         ActivityUtil.startNavigationActivity(this , title , description , hint, textButton , newActivity)
+    }
+
+    //==============================================================================================
+    // Fragments ...
+    fun replaceFragment(fragment: Fragment, tag: String, container: Int, addToBackStack: Boolean) {
+        FragmentUtil.replaceFragment(fragment, supportFragmentManager , tag, container, addToBackStack)
     }
 
     //==============================================================================================
