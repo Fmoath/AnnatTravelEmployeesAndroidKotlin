@@ -49,23 +49,25 @@ class SignInActivity : BaseActivity() , View.OnClickListener {
     }
     override fun onClick(view: View?) {
         when (view) {
-            binding.signIn -> signUp()
+            binding.signIn -> startNavigationActivity( "تم تسجيل الدخول بنجاح" , "لقد تم تسجيل دخولك بنجاح نتمنى ان تقوةم بمراجعة بريدك الإلكتروني من اجل تنشيط حسابك" , "كل الإحترام والتقدير لكم" , "متابعة" , Activities.MAIN_ACTIVITY ) //signUp()
             binding.signInForgetPassword -> Toast.makeText( this , "ستصلك رسالة على هاتفك المدخل لدينا تتضمن كلمة المرور" , Toast.LENGTH_LONG).show()
         }
     }
 
     //==============================================================================================
     // Sign In User ...
-    private fun signUp(){
+    private fun signIn(){
         val sign = signInRepository.signIn()
+        disabledViews(binding.signInEmail , binding.signInPassword , binding.signIn , binding.signInForgetPassword)
         useAnimationWithView(binding.signIn , R.anim.fade_out)
         useAnimationWithView(binding.signInProgress , R.anim.fade_in)
         if(sign){
             startNavigationActivity( "تم تسجيل الدخول بنجاح" , "لقد تم تسجيل دخولك بنجاح نتمنى ان تقوةم بمراجعة بريدك الإلكتروني من اجل تنشيط حسابك" , "كل الإحترام والتقدير لكم" , "متابعة" , Activities.MAIN_ACTIVITY )
         }else{
+            enabledViews(binding.signInEmail , binding.signInPassword , binding.signIn , binding.signInForgetPassword)
             useAnimationWithView(binding.signIn , R.anim.fade_in)
             useAnimationWithView(binding.signInProgress , R.anim.fade_out)
-            Toast.makeText( this , "Error" , Toast.LENGTH_LONG).show()
+            Toast.makeText( this , "فشل في تسجيل الدخول" , Toast.LENGTH_LONG).show()
         }
     }
 
