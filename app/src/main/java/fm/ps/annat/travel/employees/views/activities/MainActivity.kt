@@ -79,7 +79,6 @@ class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.O
             else -> false
         }
     }
-
     //==============================================================================================
     // More ...
     private fun replaceFragment(fragment: Fragment, tag: String) {
