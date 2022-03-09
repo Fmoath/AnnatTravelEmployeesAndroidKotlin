@@ -74,14 +74,6 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
     /**
-     * Multi State Switch
-     * This library makes a Multi State Switch ...
-     * Website : https://github.com/davidmigloz/multi-state-switch
-     */
-    //implementation 'com.github.davidmigloz:multi-state-switch:2.0.1'
-    implementation project(':MultiStateSwitchLip')
-
-    /**
      * Validation Library
      * This library performs in-app validations and is from my own programming ...
      * Website : https://github.com/Fmoath/AndroidValidationLibrary

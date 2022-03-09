@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import fm.ps.annat.travel.employees.R
 import fm.ps.annat.travel.employees.databinding.FragmentNotificationBinding
+import fm.ps.annat.travel.employees.keys.Recyclers
 
 /**
  * Created With Love For : Annat Travel
@@ -53,12 +55,18 @@ class NotificationFragment : BaseFragment() {
     }
 
     private fun initializeView() {
-
+        replaceFragment( RecyclerFragment(Recyclers.RECYCLER_NOTIFICATION) , "notification_recycler")
     }
 
     //==============================================================================================
     // Listener ...
     private fun listener() {
 
+    }
+
+    //==============================================================================================
+    // More Function ...
+    private fun replaceFragment(fragment: Fragment, tag: String) {
+        replaceFragment(fragment , tag , R.id.fragment_notification_container , true)
     }
 }
