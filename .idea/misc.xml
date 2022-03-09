@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable-v24/im_like.xml" value="0.2045" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable-v24/shape_oval_amber.xml" value="0.1705" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable-v24/shape_oval_blue.xml" value="0.1705" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/ic_contact_us.xml" value="0.1705" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/ic_logo.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/im_background_image.xml" value="0.2045" />
@@ -13,6 +16,7 @@
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/selector_shape_rectangle_amber_to_white.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/selector_shape_rectangle_blue_to_white.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_ectangel.xml" value="0.1705" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_oval_amber.xml" value="0.1705" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_rectangle_corner_background_bottom_navigation.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_rectangle_corner_background_form.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_rectangle_corner_blue.xml" value="0.2045" />
@@ -24,6 +28,7 @@
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/activity_splash_screen.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/fragment_empty.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/fragment_error.xml" value="0.26875" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/fragment_home.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/fragment_on_boarding.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/fragment_recycler.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/menu/main_menu.xml" value="0.26875" />
