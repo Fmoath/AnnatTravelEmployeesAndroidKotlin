@@ -10,9 +10,12 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import fm.ps.annat.travel.employees.R
+import fm.ps.annat.travel.employees.adapter.recycler.contactus.ContactUsRecyclerAdapter
 import fm.ps.annat.travel.employees.adapter.recycler.notification.NotificationRecyclerAdapter
 import fm.ps.annat.travel.employees.databinding.FragmentRecyclerBinding
+import fm.ps.annat.travel.employees.keys.ContactUss
 import fm.ps.annat.travel.employees.keys.Recyclers
+import fm.ps.annat.travel.employees.model.ContactUs
 import fm.ps.annat.travel.employees.model.Notification
 import kotlin.properties.Delegates
 
@@ -52,12 +55,12 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener{
 
     //==============================================================================================
     // Arrays List ...
-//    private val contactUss : ArrayList<ContactUs> = ArrayList<ContactUs>()
+      private val contactUss : ArrayList<ContactUs> = ArrayList<ContactUs>()
       private val notifications : ArrayList<Notification> = ArrayList<Notification>()
 
     //==============================================================================================
     // Adapter ...
-//    private lateinit var contactUsRecyclerAdapter: ContactUsRecyclerAdapter
+      private lateinit var contactUsRecyclerAdapter: ContactUsRecyclerAdapter
       private lateinit var notificationRecyclerAdapter: NotificationRecyclerAdapter
 
     //==============================================================================================
@@ -100,7 +103,7 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener{
 
     override fun onLayoutChange(p0: View?, left: Int, top: Int, right: Int, bottom: Int, oldLeft: Int, oldTop: Int, oldRight: Int, oldBottom: Int) {
         when (type) {
- //           Recyclers.RECYCLER_CONTACT_US -> binding.fragmentRecycler.scrollToPosition(contactUss.size-1)
+            Recyclers.RECYCLER_CONTACT_US -> binding.fragmentRecycler.scrollToPosition(contactUss.size-1)
             Recyclers.RECYCLER_NOTIFICATION -> binding.fragmentRecycler.scrollToPosition(0)
         }
     }
@@ -109,7 +112,7 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener{
     // set Recycler ....
     private fun setRecycler() {
         when (type) {
-//            Recyclers.RECYCLER_CONTACT_US -> contactUsRecycler()
+              Recyclers.RECYCLER_CONTACT_US -> contactUsRecycler()
               Recyclers.RECYCLER_NOTIFICATION -> notificationRecycler()
 //            Recyclers.RECYCLER_TRIP_RESERVATION -> tripReservationRecycler()
 //            Recyclers.RECYCLER_TRIP_STAGE -> tripStageRecycler()
@@ -118,27 +121,27 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener{
 
     //==============================================================================================
     // Contact Us Recycler ...
-//    private fun contactUsRecycler() {
-//        contactUss.clear()
-//        binding.fragmentRecycler.isNestedScrollingEnabled = false
-//        contactUss.add(ContactUs( 0 , "" , "اليوم الساعة 4:30 مساءاً" , ContactUss.CONTACT_US_DATE))
-//        contactUss.add(ContactUs( 0 , "السلام عليكم ورحمة الله وبركاته" , "" , ContactUss.CONTACT_US_CLIENT))
-//        contactUss.add(ContactUs( 0 , "وعليكم السلام ورحمة الله وبركاته" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_COMPANY))
-//        contactUss.add(ContactUs( 0 , "لدي مشكلة في غرفتي في الفندق" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_CLIENT))
-//        contactUss.add(ContactUs( 0 , "الكهرباء متعطلة ولا تعمل وأنا في حاجتها" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_CLIENT))
-//        contactUss.add(ContactUs( 0 , "منذ متى بدأت هذه المشكلة" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_COMPANY))
-//        contactUss.add(ContactUs( 0 , "منذ ساعتين تقريباً" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_CLIENT))
-//        contactUss.add(ContactUs( 0 , "ولا يهمك أخي بإذن الله نتواصل مع إدارة الفندق وسنعمل على حلها في أقرب وقت ممكن .. نعتذر بالنيابة عنا وعن إدارة الفندق على هذا العطل وسنعمل على إصلاحه" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_COMPANY))
-//        contactUss.add(ContactUs( 0 , "أتمنى ان لا يطول هذذا العطل .. شكراً لكم" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_CLIENT))
-//        contactUss.add(ContactUs( 0 , "" , "اليوم الساعة 5:30 مساءاً" , ContactUss.CONTACT_US_DATE))
-//        contactUss.add(ContactUs( 0 , "السلام عليكم ورحمة الله وبركاته" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_COMPANY))
-//        contactUss.add(ContactUs( 0 , "الحمد لله قمنا بحل هذا العطل  ويمكنك الآن إستخدام الكهرباء  بدون أي مشاكل .. كل الإحترام لك .. شكراً لتفهمك" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_COMPANY))
-//        contactUss.add(ContactUs( 0 , "شكراً لكم بالفعل تم حلها .. جهد مبارك" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_CLIENT))
-//        contactUss.add(ContactUs( 0 , "العفو .. تقبل فائق إحترامنا وتقديرنا\nمع تحياتنا في مركز التواصل والدعم" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_COMPANY))
-//
-//        contactUsRecyclerAdapter = ContactUsRecyclerAdapter(contactUss)
-//        initializeRecyclerLinearVerticalView(contactUsRecyclerAdapter , true)
-//    }
+    private fun contactUsRecycler() {
+        contactUss.clear()
+        binding.fragmentRecycler.isNestedScrollingEnabled = false
+        contactUss.add(ContactUs( 0 , "" , "اليوم الساعة 4:30 مساءاً" , ContactUss.CONTACT_US_DATE))
+        contactUss.add(ContactUs( 0 , "السلام عليكم ورحمة الله وبركاته" , "" , ContactUss.CONTACT_US_CLIENT))
+        contactUss.add(ContactUs( 0 , "وعليكم السلام ورحمة الله وبركاته" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_COMPANY))
+        contactUss.add(ContactUs( 0 , "لدي مشكلة في غرفتي في الفندق" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_CLIENT))
+        contactUss.add(ContactUs( 0 , "الكهرباء متعطلة ولا تعمل وأنا في حاجتها" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_CLIENT))
+        contactUss.add(ContactUs( 0 , "منذ متى بدأت هذه المشكلة" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_COMPANY))
+        contactUss.add(ContactUs( 0 , "منذ ساعتين تقريباً" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_CLIENT))
+        contactUss.add(ContactUs( 0 , "ولا يهمك أخي بإذن الله نتواصل مع إدارة الفندق وسنعمل على حلها في أقرب وقت ممكن .. نعتذر بالنيابة عنا وعن إدارة الفندق على هذا العطل وسنعمل على إصلاحه" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_COMPANY))
+        contactUss.add(ContactUs( 0 , "أتمنى ان لا يطول هذذا العطل .. شكراً لكم" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_CLIENT))
+        contactUss.add(ContactUs( 0 , "" , "اليوم الساعة 5:30 مساءاً" , ContactUss.CONTACT_US_DATE))
+        contactUss.add(ContactUs( 0 , "السلام عليكم ورحمة الله وبركاته" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_COMPANY))
+        contactUss.add(ContactUs( 0 , "الحمد لله قمنا بحل هذا العطل  ويمكنك الآن إستخدام الكهرباء  بدون أي مشاكل .. كل الإحترام لك .. شكراً لتفهمك" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_COMPANY))
+        contactUss.add(ContactUs( 0 , "شكراً لكم بالفعل تم حلها .. جهد مبارك" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_CLIENT))
+        contactUss.add(ContactUs( 0 , "العفو .. تقبل فائق إحترامنا وتقديرنا\nمع تحياتنا في مركز التواصل والدعم" , "12-4-2022 , 3:40 PM" , ContactUss.CONTACT_US_COMPANY))
+
+        contactUsRecyclerAdapter = ContactUsRecyclerAdapter(contactUss)
+        initializeRecyclerLinearVerticalView(contactUsRecyclerAdapter , true)
+    }
 
     //==============================================================================================
     // Contact Us Recycler ...

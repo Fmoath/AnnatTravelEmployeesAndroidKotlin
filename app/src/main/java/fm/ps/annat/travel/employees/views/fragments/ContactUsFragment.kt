@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import fm.ps.annat.travel.employees.R
 import fm.ps.annat.travel.employees.databinding.FragmentContactUsBinding
+import fm.ps.annat.travel.employees.keys.Recyclers
 
 /**
  * Created With Love For : Annat Travel
@@ -52,12 +54,18 @@ class ContactUsFragment : BaseFragment() {
     }
 
     private fun initializeView() {
-
+        replaceFragment(RecyclerFragment(Recyclers.RECYCLER_CONTACT_US) , "contact_us_recycler")
     }
 
     //==============================================================================================
     // Listener ...
     private fun listener() {
 
+    }
+
+    //==============================================================================================
+    // More Function ...
+    private fun replaceFragment(fragment: Fragment, tag: String) {
+        replaceFragment(fragment , tag , R.id.fragment_contact_us_container , true)
     }
 }
