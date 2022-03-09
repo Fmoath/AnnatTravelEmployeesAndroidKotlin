@@ -12,7 +12,6 @@ package fm.ps.annat.travel.employees.keys
  * @Whatsapp : 00972597718418
  */
 object Activities {
-
     const val SPLASH_ACTIVITY = "SplashActivity"
     const val ON_BOARDING_ACTIVITY = "OnBoardingActivity"
     const val MAIN_ACTIVITY = "MainActivity"
@@ -20,5 +19,5 @@ object Activities {
     const val SIGN_UP_ACTIVITY = "SignUpActivity"
     const val RECOVERY_ACCOUNT_ACTIVITY = "RecoveryAccountActivity"
     const val NAVIGATION_ACTIVITY = "NavigationActivity"
-
+    const val ACTION_ACTIVITY = "ActionActivity"
 }

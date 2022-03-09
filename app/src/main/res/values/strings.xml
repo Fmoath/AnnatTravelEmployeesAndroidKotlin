@@ -127,5 +127,16 @@
     <string name="secondary_data">البيانات الثانوية</string>
     <string name="your_next_actions">إجراءاتك القادمة</string>
     <string name="view_all_actions">مشاهدة كل الإجراءات</string>
+    <string name="work_statement_number">رقم كشف الرحلة</string>
+    <string name="start_action">بدء الإجراء</string>
+    <string name="end_action">إنهاء الإجراء</string>
+    <string name="action_name">إسم الإجراء</string>
+    <string name="action_number">رقم الإجراء</string>
+    <string name="action_number_pilgrism">عدد المعتمرين</string>
+    <string name="action_transporter">الناقل</string>
+    <string name="action_port">المنفذ</string>
+    <string name="action_date">تاريخ بدء الإجراء</string>
+    <string name="action_time">وقت بدء الإجراء</string>
+    <string name="action_status">حالة الإجراء</string>
 
 </resources>

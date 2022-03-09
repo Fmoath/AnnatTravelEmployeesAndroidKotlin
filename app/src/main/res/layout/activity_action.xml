@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        tools:context=".views.activities.ActionActivity">
+
+        <LinearLayout
+            android:id="@+id/action_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/shape_rectangle_corner_background_head_page"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work_statement_number"
+                style="@style/Text_h6_r"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/action_work_statement_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2341"
+                style="@style/Text_h6_m"
+                android:textColor="@color/selector_color_amber_to_grey" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/action_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="إجراء الإستقبال في المطار"
+            style="@style/Text_h6_r"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/shape_rectangle_corner_oval_backgraund"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/action_title_container"/>
+
+        <LinearLayout
+            android:id="@+id/action_information_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/action_title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:src="@drawable/shape_oval_amber"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:layout_marginEnd="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_name"
+                    style="@style/Text_h6_r" />
+
+                <TextView
+                    android:id="@+id/action_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الإستقبال في المطار"
+                    style="@style/Text_h7_r"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/back_ground_form"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:src="@drawable/shape_oval_amber"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:layout_marginEnd="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_number"
+                    style="@style/Text_h6_r" />
+
+                <TextView
+                    android:id="@+id/action_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="234"
+                    style="@style/Text_h7_r"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/back_ground_form"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:src="@drawable/shape_oval_amber"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:layout_marginEnd="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_number_pilgrism"
+                    style="@style/Text_h6_r" />
+
+                <TextView
+                    android:id="@+id/action_number_pilgrism"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18"
+                    style="@style/Text_h7_r"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/back_ground_form"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:src="@drawable/shape_oval_amber"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:layout_marginEnd="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_transporter"
+                    style="@style/Text_h6_r" />
+
+                <TextView
+                    android:id="@+id/action_transporter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الشركة الوطنية للنقل والمواصلات"
+                    style="@style/Text_h7_r"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/back_ground_form"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:src="@drawable/shape_oval_amber"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:layout_marginEnd="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city"
+                    style="@style/Text_h6_r" />
+
+                <TextView
+                    android:id="@+id/action_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الرياض"
+                    style="@style/Text_h7_r"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/back_ground_form"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:src="@drawable/shape_oval_amber"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:layout_marginEnd="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_port"
+                    style="@style/Text_h6_r" />
+
+                <TextView
+                    android:id="@+id/action_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مطار الملك عبد العزيز الدولي"
+                    style="@style/Text_h7_r"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/back_ground_form"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:src="@drawable/shape_oval_amber"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:layout_marginEnd="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_date"
+                    style="@style/Text_h6_r" />
+
+                <TextView
+                    android:id="@+id/action_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12-4-2022"
+                    style="@style/Text_h7_r"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/back_ground_form"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:src="@drawable/shape_oval_amber"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/image"
+                    android:layout_marginEnd="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_time"
+                    style="@style/Text_h6_r" />
+
+                <TextView
+                    android:id="@+id/action_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:30:00 مساءاً"
+                    style="@style/Text_h7_r"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/back_ground_form"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/action_information_container"
+            app:layout_constraintBottom_toTopOf="@+id/action_status_container">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_status"
+                style="@style/Text_h6_r"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/shape_rectangle_corner_oval_backgraund"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="سيبدأ بعد 14 دقيقة من الآن"
+                style="@style/Text_h6_r"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/action_status_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/action_start"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                style="@style/Button_blue"
+                android:text="@string/start_action"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp" />
+
+            <Button
+                android:id="@+id/action_end"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                style="@style/Button_amber"
+                android:text="@string/end_action"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

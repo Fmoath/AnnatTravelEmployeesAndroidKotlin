@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import fm.ps.annat.travel.employees.R
 import fm.ps.annat.travel.employees.databinding.FragmentHomeBinding
+import fm.ps.annat.travel.employees.keys.Activities
 
 /**
  * Created With Love For : Annat Travel
@@ -19,7 +20,7 @@ import fm.ps.annat.travel.employees.databinding.FragmentHomeBinding
  * @Website : fm-ps.online
  * @Whatsapp : 00972597718418
  */
-class HomeFragment : BaseFragment() {
+class HomeFragment : BaseFragment() , View.OnClickListener{
 
     //==============================================================================================
     // Binding ...
@@ -58,6 +59,12 @@ class HomeFragment : BaseFragment() {
     //==============================================================================================
     // Listener ...
     private fun listener() {
+        binding.fragmentHomeViewAllAction.setOnClickListener( this )
+    }
 
+    override fun onClick(view: View?) {
+        if (view == binding.fragmentHomeViewAllAction){
+            startNewActivity(Activities.ACTION_ACTIVITY , null , false)
+        }
     }
 }
