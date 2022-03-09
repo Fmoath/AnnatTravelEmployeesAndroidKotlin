@@ -88,6 +88,12 @@ dependencies {
      */
     implementation 'com.github.Fmoath:AndroidValidationLibrary:1.0.0'
 
+    /**
+     * Google Maps Library
+     * This library is provided by Google to deal with Google Maps ...
+     */
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

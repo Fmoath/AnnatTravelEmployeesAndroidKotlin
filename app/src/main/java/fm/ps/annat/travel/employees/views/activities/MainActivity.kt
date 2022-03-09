@@ -8,9 +8,11 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationBarView
 import fm.ps.annat.travel.employees.R
 import fm.ps.annat.travel.employees.databinding.ActivityMainBinding
+import fm.ps.annat.travel.employees.keys.Locations
 import fm.ps.annat.travel.employees.util.BottomNavigationUtil.deselectAllItems
 import fm.ps.annat.travel.employees.views.fragments.ContactUsFragment
 import fm.ps.annat.travel.employees.views.fragments.HomeFragment
+import fm.ps.annat.travel.employees.views.fragments.LocationFragment
 
 class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.OnItemSelectedListener {
 
@@ -64,7 +66,7 @@ class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.O
                 true
             }
             R.id.main_menu_location -> {
-                //replaceFragment( LocationFragment() , "location_fragment")
+                replaceFragment( LocationFragment(Locations.LOCATION_FULL) , "location_fragment")
                 true
             }
             R.id.main_menu_contact_us -> {

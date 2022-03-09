@@ -70,6 +70,12 @@
     <string name="fragment_contact_us_description_sec">مركز الدعم والتواصل في الشركة</string>
     <string name="message_text">نص الرسالة</string>
 
+    //==============================================================================================
+    // Location ...
+    <string name="report_my_loss_to_the_company">إبلاغ الشركة عن مشكلة</string>
+    <string name="fragment_location_description">في هذه الخريطة يظهر</string>
+    <string name="fragment_location_description_sec">موقعك الحالي ومواقع أخرى قد تهمك</string>
+
 
     //==============================================================================================
     // Language ...
