@@ -138,5 +138,7 @@
     <string name="action_date">تاريخ بدء الإجراء</string>
     <string name="action_time">وقت بدء الإجراء</string>
     <string name="action_status">حالة الإجراء</string>
+    <string name="pilgrisms_names">أسماء المعتمرين</string>
+    <string name="passport_number">رقم جواز السفر</string>
 
 </resources>

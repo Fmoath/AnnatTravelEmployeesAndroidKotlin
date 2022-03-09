@@ -15,6 +15,16 @@
             android:value="YOUR_API_KEY" />
 
         <activity
+            android:name=".views.activities.ActionStatusActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="fm.ps.annat.travel.employees" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="ActionStatusActivity" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".views.activities.ActionActivity"
             android:exported="true">
             <intent-filter>
