@@ -51,9 +51,9 @@ class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.O
 
     override fun onClick(view: View?) {
         if (view == binding.fragmentHomeProfile){
-            binding.fragmentHomeProfile.isSelected = true
+            replaceFragment( ProfileFragment() , "profile_fragment")
             binding.mainBottomBarOption.deselectAllItems()
-            //replaceFragment( ProfileFragment() , "profile_fragment")
+            binding.fragmentHomeProfile.isSelected = true
         }
     }
 

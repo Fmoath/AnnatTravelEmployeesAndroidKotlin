@@ -12,17 +12,34 @@
     //==============================================================================================
     // Developer ...
     <string name="dev_name">معاذ رائد أبو عودة</string>
+    <string name="dev_nationality">فلسطيني</string>
     <string name="dev_email">fm.moath99@gmail.com</string>
     <string name="dev_mobile">00972597718418</string>
 
     //==============================================================================================
-    // General ...
+    // Owner ...
+    <string name="owner_name">أحمد بن عبدالرحمن العقيل</string>
+    <string name="owner_nationality">سعودي</string>
+    <string name="owner_email">fm.moath99@gmail.com</string>
 
+    //==============================================================================================
+    // General ...
     <string name="user_name">إسم المستخدم</string>
+    <string name="full_name">الإسم الكامل</string>
+    <string name="nationality">الجنسية</string>
+    <string name="visa_number">رقم التأشيرة</string>
+    <string name="entry_number">رقم الدخولية</string>
+    <string name="image_personal">صورتك الشخصية</string>
     <string name="user_image">صورة المستخدم</string>
-    <string name="passport_number">رقم جواز السفر</string>
     <string name="e_mail">البريد الإلكتروني</string>
     <string name="mobile">رقم الهاتف</string>
+    <string name="city">المدينة</string>
+    <string name="port">المنفذ</string>
+    <string name="date">التاريخ</string>
+    <string name="time">الوقت</string>
+    <string name="accompanying">المحرم</string>
+    <string name="mobile_number_inside_saudi_arabi">رقم هاتفك داخل المملكة العربية السعودية</string>
+    <string name="mobile_number_in_home_country">رقم هاتفك الأساسي في بلدك</string>
     <string name="password">كلمة المرور</string>
 
     <string name="home">الرئيسية</string>
@@ -38,6 +55,9 @@
     <string name="skip">تخطي</string>
 
     <string name="edit">تعديل</string>
+
+    <string name="there_is_no">لا يوجد</string>
+
 
     //==============================================================================================
     // On Boarding ...
