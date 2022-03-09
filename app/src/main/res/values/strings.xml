@@ -76,6 +76,10 @@
     <string name="fragment_location_description">في هذه الخريطة يظهر</string>
     <string name="fragment_location_description_sec">موقعك الحالي ومواقع أخرى قد تهمك</string>
 
+    //==============================================================================================
+    // Notification ...
+    <string name="fragment_notification_description">مركز الإشعارات والتنبيهات</string>
+    <string name="fragment_notification_description_sec">عدد الرسائل غير مقروءة : 5</string>
 
     //==============================================================================================
     // Language ...

@@ -13,6 +13,7 @@ import fm.ps.annat.travel.employees.util.BottomNavigationUtil.deselectAllItems
 import fm.ps.annat.travel.employees.views.fragments.ContactUsFragment
 import fm.ps.annat.travel.employees.views.fragments.HomeFragment
 import fm.ps.annat.travel.employees.views.fragments.LocationFragment
+import fm.ps.annat.travel.employees.views.fragments.NotificationFragment
 
 class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.OnItemSelectedListener {
 
@@ -74,7 +75,7 @@ class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.O
                 true
             }
             R.id.main_menu_notification -> {
-                //replaceFragment( NotificationFragment() , "notification_fragment")
+                replaceFragment( NotificationFragment() , "notification_fragment")
                 true
             }
             R.id.main_menu_setting -> {
