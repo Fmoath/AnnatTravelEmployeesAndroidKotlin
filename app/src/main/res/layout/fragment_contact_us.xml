@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl">
+
+        <LinearLayout
+            android:id="@+id/fragment_contact_us_container_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/shape_rectangle_corner_background_head_page"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_contact_us_description"
+                style="@style/Text_h6_r"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_contact_us_description_sec"
+                style="@style/Text_h6_m"
+                android:textColor="@color/selector_color_amber_to_grey" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_contact_us_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_contact_us_container_title"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_contact_us_container_message" />
+
+        <FrameLayout
+            android:id="@+id/fragment_contact_us_container_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rectangle_corner_background_form"
+            android:layout_marginBottom="-60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rectangle_corner_white"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_50sdp">
+
+                <EditText
+                    android:id="@+id/fragment_contact_us_message"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/message_text"
+                    style="@style/Text_h6_r"
+                    android:background="@android:color/transparent"
+                    android:layout_marginEnd="@dimen/_20sdp" />
+
+                <ImageButton
+                    android:id="@+id/fragment_contact_us_send_message"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="end|bottom"
+                    android:src="@drawable/ic_contact_us"
+                    app:tint="@color/white"
+                    android:background="@drawable/shape_oval_amber"
+                    android:contentDescription="@string/image" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
