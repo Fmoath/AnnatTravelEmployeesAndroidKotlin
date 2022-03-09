@@ -1,7 +1,7 @@
 package fm.ps.annat.travel.employees.repository
 
 import android.widget.EditText
-import fm.ps.annat.travel.employees.validator.Validation
+import fm.ps.lib.validation.validator.Validation
 
 /**
  * Created With Love For : Annat Travel

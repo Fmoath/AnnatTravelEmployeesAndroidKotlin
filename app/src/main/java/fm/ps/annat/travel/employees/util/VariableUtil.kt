@@ -1,7 +1,6 @@
 package fm.ps.annat.travel.employees.util
 
 import android.widget.EditText
-import fm.ps.annat.travel.employees.keys.Patterns
 
 /**
  * Created With Love For : Annat Travel

@@ -81,6 +81,12 @@ dependencies {
     //implementation 'com.github.davidmigloz:multi-state-switch:2.0.1'
     implementation project(':MultiStateSwitchLip')
 
+    /**
+     * Validation Library
+     * This library performs in-app validations and is from my own programming ...
+     * Website : https://github.com/Fmoath/AndroidValidationLibrary
+     */
+    implementation 'com.github.Fmoath:AndroidValidationLibrary:1.0.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
