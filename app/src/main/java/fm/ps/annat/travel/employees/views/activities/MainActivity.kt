@@ -10,10 +10,7 @@ import fm.ps.annat.travel.employees.R
 import fm.ps.annat.travel.employees.databinding.ActivityMainBinding
 import fm.ps.annat.travel.employees.keys.Locations
 import fm.ps.annat.travel.employees.util.BottomNavigationUtil.deselectAllItems
-import fm.ps.annat.travel.employees.views.fragments.ContactUsFragment
-import fm.ps.annat.travel.employees.views.fragments.HomeFragment
-import fm.ps.annat.travel.employees.views.fragments.LocationFragment
-import fm.ps.annat.travel.employees.views.fragments.NotificationFragment
+import fm.ps.annat.travel.employees.views.fragments.*
 
 class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.OnItemSelectedListener {
 
@@ -79,7 +76,7 @@ class MainActivity : BaseActivity() , View.OnClickListener , NavigationBarView.O
                 true
             }
             R.id.main_menu_setting -> {
-                //replaceFragment( SettingFragment() , "setting_fragment")
+                replaceFragment( SettingFragment() , "setting_fragment")
                 true
             }
             else -> false
