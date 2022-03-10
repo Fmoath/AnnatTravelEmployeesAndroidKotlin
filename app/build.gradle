@@ -81,6 +81,13 @@ dependencies {
     implementation 'com.github.Fmoath:AndroidValidationLibrary:1.0.0'
 
     /**
+     * Switcher Library
+     * This library provides the check box element, but in a professional way ...
+     * Website : https://github.com/bitvale/Switcher
+     */
+    implementation 'io.github.bitvale:switcher:1.1.2'
+
+    /**
      * Google Maps Library
      * This library is provided by Google to deal with Google Maps ...
      */

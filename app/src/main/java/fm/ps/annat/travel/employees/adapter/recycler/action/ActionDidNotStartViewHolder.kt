@@ -1,7 +1,10 @@
 package fm.ps.annat.travel.employees.adapter.recycler.action
 
+import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import fm.ps.annat.travel.employees.adapter.recycler.BaseHolder
 import fm.ps.annat.travel.employees.databinding.ItemActionDidNotStartBinding
+import fm.ps.annat.travel.employees.keys.Activities
 import fm.ps.annat.travel.employees.model.Action
 
 /**
@@ -16,7 +19,7 @@ import fm.ps.annat.travel.employees.model.Action
  * @Whatsapp : 00972597718418
  */
 class ActionDidNotStartViewHolder(private var binding: ItemActionDidNotStartBinding) :
-    RecyclerView.ViewHolder(binding.root) {
+    BaseHolder(binding.root) , View.OnClickListener{
 
     //==============================================================================================
     // Model ...
@@ -47,6 +50,12 @@ class ActionDidNotStartViewHolder(private var binding: ItemActionDidNotStartBind
     //==============================================================================================
     // Listener In Views  ...
     private fun listener() {
+        binding.itemActionDidNotStart.setOnClickListener( this )
+    }
 
+    override fun onClick(view: View?) {
+        if (view == binding.itemActionDidNotStart){
+            startNewActivity(Activities.ACTION_ACTIVITY , null , false )
+        }
     }
 }

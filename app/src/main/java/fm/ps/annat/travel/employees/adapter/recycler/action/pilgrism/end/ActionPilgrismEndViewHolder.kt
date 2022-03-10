@@ -1,37 +1,33 @@
-package fm.ps.annat.travel.employees.adapter.recycler.action
+package fm.ps.annat.travel.employees.adapter.recycler.action.pilgrism.end
 
-import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import fm.ps.annat.travel.employees.adapter.recycler.BaseHolder
-import fm.ps.annat.travel.employees.databinding.ItemActionUnderwayBinding
-import fm.ps.annat.travel.employees.keys.Activities
-import fm.ps.annat.travel.employees.model.Action
+import fm.ps.annat.travel.employees.databinding.ItemPilgrismBinding
+import fm.ps.annat.travel.employees.model.Pilgrism
 
 /**
- * Created With Love For : Anat Travel
+ * Created With Love For : Annat Travel
  * The owner has been granted all rights in the application and has the freedom to dispose of everything
  * @by : Eng-Moath Raed Abu Ouda
  * @CompanyManager : FM-Team
  * @In : Palestine - Gaza - Biet Hanoun
  * @OnDate : 3/10/2022
- * @InTheHour : 10 : 46 : 18
+ * @InTheHour : 12 : 40 : 38
  * @Website : fm-ps.online
  * @Whatsapp : 00972597718418
  */
-class ActionUnderwayViewHolder(private var binding: ItemActionUnderwayBinding) :
-    BaseHolder(binding.root) , View.OnClickListener {
+class ActionPilgrismEndViewHolder(private var binding: ItemPilgrismBinding) : RecyclerView.ViewHolder(binding.root) {
 
     //==============================================================================================
     // Model ...
-    private lateinit var action: Action
+    private lateinit var pilgrism: Pilgrism
 
     //==============================================================================================
     // Interface ...
 
     //==============================================================================================
     // On Create Item  ...
-    fun createItem(action: Action) {
-        this.action = action
+    fun createItem(pilgrism: Pilgrism) {
+        this.pilgrism = pilgrism
         initializeItem()
     }
 
@@ -43,19 +39,14 @@ class ActionUnderwayViewHolder(private var binding: ItemActionUnderwayBinding) :
     }
 
     private fun initializeViews() {
-        binding.itemActionUnderwayTitle.text = action.getTitle()
-        binding.itemActionUnderwayDate.text = action.getDate()
+        binding.itemPilgrismName.text = pilgrism.getName()
+        binding.itemPilgrismPassport.text = pilgrism.getPassport()
+        binding.itemPilgrismSwitcher.setChecked(false , withAnimation = false)
     }
 
     //==============================================================================================
     // Listener In Views  ...
     private fun listener() {
-        binding.itemActionUnderway.setOnClickListener( this )
-    }
 
-    override fun onClick(view: View?) {
-        if (view == binding.itemActionUnderway){
-            startNewActivity(Activities.ACTION_ACTIVITY , null , false )
-        }
     }
 }

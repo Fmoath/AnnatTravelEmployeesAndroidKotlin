@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import fm.ps.annat.travel.employees.R
 import fm.ps.annat.travel.employees.adapter.recycler.action.ActionRecyclerAdapter
+import fm.ps.annat.travel.employees.adapter.recycler.action.pilgrism.end.ActionEndPilgrismRecyclerAdapter
+import fm.ps.annat.travel.employees.adapter.recycler.action.pilgrism.start.ActionStartPilgrismRecyclerAdapter
 import fm.ps.annat.travel.employees.adapter.recycler.contactus.ContactUsRecyclerAdapter
 import fm.ps.annat.travel.employees.adapter.recycler.notification.NotificationRecyclerAdapter
 import fm.ps.annat.travel.employees.databinding.FragmentRecyclerBinding
@@ -20,6 +22,7 @@ import fm.ps.annat.travel.employees.keys.Recyclers
 import fm.ps.annat.travel.employees.model.Action
 import fm.ps.annat.travel.employees.model.ContactUs
 import fm.ps.annat.travel.employees.model.Notification
+import fm.ps.annat.travel.employees.model.Pilgrism
 import kotlin.properties.Delegates
 
 /**
@@ -58,15 +61,18 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener{
 
     //==============================================================================================
     // Arrays List ...
-      private val contactUss : ArrayList<ContactUs> = ArrayList<ContactUs>()
+    private val contactUss : ArrayList<ContactUs> = ArrayList<ContactUs>()
     private val notifications : ArrayList<Notification> = ArrayList<Notification>()
     private val actions : ArrayList<Action> = ArrayList<Action>()
+    private val pilgrism : ArrayList<Pilgrism> = ArrayList<Pilgrism>()
 
     //==============================================================================================
     // Adapter ...
-      private lateinit var contactUsRecyclerAdapter: ContactUsRecyclerAdapter
+    private lateinit var contactUsRecyclerAdapter: ContactUsRecyclerAdapter
     private lateinit var notificationRecyclerAdapter: NotificationRecyclerAdapter
     private lateinit var actionRecyclerAdapter: ActionRecyclerAdapter
+    private lateinit var actionStartPilgrismRecyclerAdapter: ActionStartPilgrismRecyclerAdapter
+    private lateinit var actionEndPilgrismRecyclerAdapter: ActionEndPilgrismRecyclerAdapter
 
     //==============================================================================================
     // Variable ...
@@ -119,7 +125,9 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener{
         when (type) {
               Recyclers.RECYCLER_CONTACT_US -> contactUsRecycler()
               Recyclers.RECYCLER_NOTIFICATION -> notificationRecycler()
-              Recyclers.RECYCLER_ACTION -> actionRecycler()
+            Recyclers.RECYCLER_ACTION -> actionRecycler()
+            Recyclers.RECYCLER_ACTION_START -> actionStartPilgrismRecycler()
+            Recyclers.RECYCLER_ACTION_END -> actionEndPilgrismRecycler()
         }
     }
 
@@ -175,6 +183,40 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener{
         actions.add(Action( 0 , "الإسقبال في المطار" , "انتهت منذ يومين وساعتين و 3 دقائق" , ActionStatus.ACTION_COMPLETED))
         actionRecyclerAdapter = ActionRecyclerAdapter(actions)
         initializeRecyclerLinearVerticalView(actionRecyclerAdapter , false)
+    }
+
+    //==============================================================================================
+    // Actions Start Recycler ...
+    private fun actionStartPilgrismRecycler() {
+        pilgrism.clear()
+        binding.fragmentRecycler.isNestedScrollingEnabled = false
+        pilgrism.add(Pilgrism( 0 , "عبدالله عوني أبو هربيد" , "123SDD984234"))
+        pilgrism.add(Pilgrism( 0 , "عبدالرحيم أسامه سحويل" , "124312DSFDSVS"))
+        pilgrism.add(Pilgrism( 0 , "محمد محمود الهسي" , "ASD324324SAD"))
+        pilgrism.add(Pilgrism( 0 , "فاطمة صالحة مطر" , "ASDASD324FR"))
+        pilgrism.add(Pilgrism( 0 , "صالح عبدالرحمن مطر" , "234324FRG56"))
+        pilgrism.add(Pilgrism( 0 , "صباح عبدالرحمن المدهون" , "ASD2343DDS345"))
+        pilgrism.add(Pilgrism( 0 , "معاذ رائد أبو عودة" , "234EFTHJYJ35"))
+        pilgrism.add(Pilgrism( 0 , "رائد ناصر أبو عودة" , "234MPLKM6544"))
+        actionStartPilgrismRecyclerAdapter = ActionStartPilgrismRecyclerAdapter(pilgrism)
+        initializeRecyclerLinearVerticalView(actionStartPilgrismRecyclerAdapter , false)
+    }
+
+    //==============================================================================================
+    // Actions Start Recycler ...
+    private fun actionEndPilgrismRecycler() {
+        pilgrism.clear()
+        binding.fragmentRecycler.isNestedScrollingEnabled = false
+        pilgrism.add(Pilgrism( 0 , "عبدالله عوني أبو هربيد" , "123SDD984234"))
+        pilgrism.add(Pilgrism( 0 , "عبدالرحيم أسامه سحويل" , "124312DSFDSVS"))
+        pilgrism.add(Pilgrism( 0 , "محمد محمود الهسي" , "ASD324324SAD"))
+        pilgrism.add(Pilgrism( 0 , "فاطمة صالحة مطر" , "ASDASD324FR"))
+        pilgrism.add(Pilgrism( 0 , "صالح عبدالرحمن مطر" , "234324FRG56"))
+        pilgrism.add(Pilgrism( 0 , "صباح عبدالرحمن المدهون" , "ASD2343DDS345"))
+        pilgrism.add(Pilgrism( 0 , "معاذ رائد أبو عودة" , "234EFTHJYJ35"))
+        pilgrism.add(Pilgrism( 0 , "رائد ناصر أبو عودة" , "234MPLKM6544"))
+        actionEndPilgrismRecyclerAdapter = ActionEndPilgrismRecyclerAdapter(pilgrism)
+        initializeRecyclerLinearVerticalView(actionEndPilgrismRecyclerAdapter , false)
     }
 
     //==============================================================================================

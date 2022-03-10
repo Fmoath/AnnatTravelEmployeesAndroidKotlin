@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_7sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/item_pilgrism_name"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:text="@string/pilgrisms_names"
+                style="@style/Text_h6_r"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/item_pilgrism_passport"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/passport_number"
+                style="@style/Text_h6_r"
+                android:gravity="center"/>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+
+                <com.bitvale.switcher.SwitcherX
+                    android:id="@+id/item_pilgrism_switcher"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_gravity="center"
+                    app:elevation="0dp"
+                    app:switcher_on_color="@color/blue"
+                    app:switcher_off_color="@color/red"
+                    app:switcher_icon_color="@color/white" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/back_ground_form"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp" />
+
+    </LinearLayout>
+</layout>
