@@ -5,9 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import fm.ps.annat.travel.employees.R
 import fm.ps.annat.travel.employees.databinding.FragmentHomeBinding
 import fm.ps.annat.travel.employees.keys.Activities
+import fm.ps.annat.travel.employees.keys.Recyclers
 
 /**
  * Created With Love For : Annat Travel
@@ -53,7 +55,7 @@ class HomeFragment : BaseFragment() , View.OnClickListener{
     }
 
     private fun initializeView() {
-
+        replaceFragment( RecyclerFragment(Recyclers.RECYCLER_ACTION) , "actions_recycler")
     }
 
     //==============================================================================================
@@ -66,5 +68,11 @@ class HomeFragment : BaseFragment() , View.OnClickListener{
         if (view == binding.fragmentHomeViewAllAction){
             startNewActivity(Activities.ACTION_ACTIVITY , null , false)
         }
+    }
+
+    //==============================================================================================
+    // More Function ...
+    private fun replaceFragment(fragment: Fragment, tag: String) {
+        replaceFragment(fragment , tag , R.id.fragment_home_container , true)
     }
 }

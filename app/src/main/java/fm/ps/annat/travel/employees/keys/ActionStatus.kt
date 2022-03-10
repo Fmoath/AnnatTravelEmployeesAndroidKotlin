@@ -17,4 +17,8 @@ object ActionStatus {
     const val ACTION_START = 0
     const val ACTION_END = 1
 
+    const val ACTION_COMPLETED = 2
+    const val ACTION_UNDERWAY = 3
+    const val ACTION_DID_NOT_START = 4
+
 }

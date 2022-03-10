@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        android:background="@drawable/shape_rectangle_corner_white"
+        android:elevation="@dimen/_2sdp"
+        android:padding="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_7sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/shape_oval_amber"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            android:id="@+id/item_action_underway_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإستقبال في المطار"
+            style="@style/Text_h6_r"
+            android:layout_marginStart="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/item_action_underway_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/amber"
+            android:gravity="end"
+            android:text="بعد ساعتين و 40 دقيقة"
+            style="@style/Text_h7_r" />
+
+    </LinearLayout>
+</layout>

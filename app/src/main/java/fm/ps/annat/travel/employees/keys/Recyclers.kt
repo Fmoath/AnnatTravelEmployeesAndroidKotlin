@@ -15,5 +15,6 @@ object Recyclers {
 
     const val RECYCLER_CONTACT_US = 0
     const val RECYCLER_NOTIFICATION = 1
+    const val RECYCLER_ACTION = 2
 
 }

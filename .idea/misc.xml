@@ -6,6 +6,8 @@
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable-v24/im_like.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable-v24/shape_oval_amber.xml" value="0.1705" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable-v24/shape_oval_blue.xml" value="0.1705" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable-v24/shape_oval_green.xml" value="0.1705" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable-v24/shape_oval_red.xml" value="0.1705" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/ic_contact_us.xml" value="0.1705" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/ic_logo.xml" value="0.2045" />
@@ -18,9 +20,12 @@
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_contact_us_client.xml" value="0.1705" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_ectangel.xml" value="0.1705" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_oval_amber.xml" value="0.1705" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_oval_green.xml" value="0.1705" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_oval_red.xml" value="0.1705" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_rectangle_corner_background_bottom_navigation.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_rectangle_corner_background_form.xml" value="0.2045" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_rectangle_corner_blue.xml" value="0.2045" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/drawable/shape_rectangle_corner_white.xml" value="0.1705" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/activity_action.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/activity_action_status.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/activity_main.xml" value="0.26875" />
@@ -39,6 +44,10 @@
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/fragment_profile.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/fragment_recycler.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/fragment_setting.xml" value="0.26461538461538464" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/item_action.xml" value="0.26875" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/item_action_completed.xml" value="0.26875" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/item_action_did_not_start.xml" value="0.26875" />
+        <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/item_action_underway.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/item_contact_us_client.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/item_contact_us_company.xml" value="0.26875" />
         <entry key="..\:/2 - Annat/1 - travel/android/EmployeesApplication/app/src/main/res/layout/item_contact_us_date.xml" value="0.26875" />

@@ -10,11 +10,14 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import fm.ps.annat.travel.employees.R
+import fm.ps.annat.travel.employees.adapter.recycler.action.ActionRecyclerAdapter
 import fm.ps.annat.travel.employees.adapter.recycler.contactus.ContactUsRecyclerAdapter
 import fm.ps.annat.travel.employees.adapter.recycler.notification.NotificationRecyclerAdapter
 import fm.ps.annat.travel.employees.databinding.FragmentRecyclerBinding
+import fm.ps.annat.travel.employees.keys.ActionStatus
 import fm.ps.annat.travel.employees.keys.ContactUss
 import fm.ps.annat.travel.employees.keys.Recyclers
+import fm.ps.annat.travel.employees.model.Action
 import fm.ps.annat.travel.employees.model.ContactUs
 import fm.ps.annat.travel.employees.model.Notification
 import kotlin.properties.Delegates
@@ -56,12 +59,14 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener{
     //==============================================================================================
     // Arrays List ...
       private val contactUss : ArrayList<ContactUs> = ArrayList<ContactUs>()
-      private val notifications : ArrayList<Notification> = ArrayList<Notification>()
+    private val notifications : ArrayList<Notification> = ArrayList<Notification>()
+    private val actions : ArrayList<Action> = ArrayList<Action>()
 
     //==============================================================================================
     // Adapter ...
       private lateinit var contactUsRecyclerAdapter: ContactUsRecyclerAdapter
-      private lateinit var notificationRecyclerAdapter: NotificationRecyclerAdapter
+    private lateinit var notificationRecyclerAdapter: NotificationRecyclerAdapter
+    private lateinit var actionRecyclerAdapter: ActionRecyclerAdapter
 
     //==============================================================================================
     // Variable ...
@@ -114,8 +119,7 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener{
         when (type) {
               Recyclers.RECYCLER_CONTACT_US -> contactUsRecycler()
               Recyclers.RECYCLER_NOTIFICATION -> notificationRecycler()
-//            Recyclers.RECYCLER_TRIP_RESERVATION -> tripReservationRecycler()
-//            Recyclers.RECYCLER_TRIP_STAGE -> tripStageRecycler()
+              Recyclers.RECYCLER_ACTION -> actionRecycler()
         }
     }
 
@@ -144,7 +148,7 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener{
     }
 
     //==============================================================================================
-    // Contact Us Recycler ...
+    // Notification Recycler ...
     private fun notificationRecycler() {
         notifications.clear()
         binding.fragmentRecycler.isNestedScrollingEnabled = false
@@ -157,6 +161,20 @@ class RecyclerFragment() : BaseFragment() , View.OnLayoutChangeListener{
 
         notificationRecyclerAdapter = NotificationRecyclerAdapter(notifications)
         initializeRecyclerLinearVerticalView(notificationRecyclerAdapter , false)
+    }
+
+    //==============================================================================================
+    // Actions Recycler ...
+    private fun actionRecycler() {
+        actions.clear()
+        binding.fragmentRecycler.isNestedScrollingEnabled = false
+        actions.add(Action( 0 , "الإستقبال في المطار" , "بعد يومين و 4 ساعات و دقيقتين" , ActionStatus.ACTION_DID_NOT_START))
+        actions.add(Action( 0 , "المرافقة في المزار" , "بعد يوم وساعتين و30 دقيقة" , ActionStatus.ACTION_DID_NOT_START))
+        actions.add(Action( 0 , "نقل المعتمرين" , "جارية الآن" , ActionStatus.ACTION_UNDERWAY))
+        actions.add(Action( 0 , "التبييت" , "إنتهت منذ البارحة" , ActionStatus.ACTION_COMPLETED))
+        actions.add(Action( 0 , "الإسقبال في المطار" , "انتهت منذ يومين وساعتين و 3 دقائق" , ActionStatus.ACTION_COMPLETED))
+        actionRecyclerAdapter = ActionRecyclerAdapter(actions)
+        initializeRecyclerLinearVerticalView(actionRecyclerAdapter , false)
     }
 
     //==============================================================================================
